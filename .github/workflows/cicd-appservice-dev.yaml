@@ -91,6 +91,6 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.WORKFLOW_TOKEN }}
-        repository: <username>/<username>-pipeline
-        event-type: <username>-tutorial-backend-cd-dev
+        repository: witchapp/user31-pipeline
+        event-type: user31-tutorial-backend-cd-dev
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
