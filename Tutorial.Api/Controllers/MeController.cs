@@ -25,6 +25,7 @@ namespace Tutorial.Api.Controllers
         public async Task<ContentResult> Message(){
             return new ContentResult{
                 ContentType = "text/html",
+                #test code update
                 Content = await HttpRequestAsync("https://raw.githubusercontent.com/witchapp/witchapp.github.io/main/index.html") + " <b>Dotnet Tutorial Backend v0.0.1</b>"
             };
         }   
