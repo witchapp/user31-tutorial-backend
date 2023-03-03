@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: dev
-      url: https://github.com/<witchapp>/<user31>-tutorial-backend/security/code-scanning
+      url: https://github.com/witchapp/user31-tutorial-backend/security/code-scanning
     permissions:
       actions: read
       contents: read
@@ -84,7 +84,7 @@ jobs:
     needs: [unitest,analyze]
     environment:
       name: dev
-      url: https://github.com/<witchapp>/<user31>-tutorial-backend/actions/workflows/dev-tutorial-backend-deploy.yml
+      url: https://github.com/witchapp/user31-tutorial-backend/actions/workflows/dev-tutorial-backend-deploy.yml
 
     steps:
     - name: Repository Dispatch
